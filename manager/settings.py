@@ -63,8 +63,8 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            '/home/ubuntu/manager/management/templates',
-            '/home/ubuntu/manager/website/templates',
+            os.path.join(BASE_DIR, 'management/templates'),
+            os.path.join(BASE_DIR, 'website/templates')
         ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -154,9 +154,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/ubuntu/fooddarzee/manager/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_ROOT = '/home/ubuntu/fooddarzee/manager/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 MEDIA_URL = '/media/'
 
