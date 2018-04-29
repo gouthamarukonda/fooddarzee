@@ -1,0 +1,18 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<form action="" method="post">
+{% csrf_token %}
+{{ form }}
+ <input type="date" class="form-control" name="date" value="{{placement.date|date:'Y-m-d' }}">
+<select name="ti">
+<option value = "Morning">Morning</option>
+<option value = "Evening">Evening</option>
+</select>
+<p>
+Are you sure you want to execute this action on the selected items?
+</p>
+ <input type="hidden" name="action" value="skip_meals_for_a_day" />
+  <input type="submit" name="apply" value="Apply"/>
+  </form>
+{% endblock %}

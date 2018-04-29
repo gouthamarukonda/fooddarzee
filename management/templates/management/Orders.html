@@ -1,0 +1,72 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+<form action="" method="post">
+{% csrf_token %}
+	<label>Date:</label>
+	<input type="text" name="date" value="{{d}}" class="vDateField">
+	<select name="time">
+		<option value = "Morning" {{s.Morning}}>Morning</option>
+		<option value = "Evening" {{s.Evening}}>Evening</option>
+	</select>
+	<input type="radio" name="type" value="summary" {{t.summary}}> Summary
+	<input type="radio" name="type" value="detailed" {{t.detailed}}> Detailed
+	<button type="submit" class="button" name="order">Go</button>
+	<button type="submit" class="button" name="export">export</button>
+</form>
+{% if t.detailed == "checked" %}
+<table>
+	<tr>
+		<th>User ID</th>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>Dish</th>
+		<th>category</th>
+		<th>Allergens</th>
+	</tr>
+	{% for item in q %}
+	<tr>
+		{% for i in item%}
+		<td>{{i}}</td>
+		{%endfor%}
+	</tr>
+	{% endfor %}
+</table>
+{% else %}
+<table>
+	<tr>
+		<th>Dish</th>
+		<th>Category 1</th>
+		<th>Category 2</th>
+		<th>Category 3</th>
+		<th>Category 4</th>
+		<th>Category 5</th>
+		<th>Total</th>
+		<th>Allergens</th>
+	</tr>
+		{% for item in q %}
+	<tr>
+		{% for i in item%}
+		<td>{{i}}</td>
+		{%endfor%}
+	</tr>
+	{% endfor %}	
+</table>
+{% endif %}
+{% endblock %}

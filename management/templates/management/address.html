@@ -1,0 +1,32 @@
+{% extends "admin/base_site.html" %}
+
+{% block content %}
+<form action="" method="post">
+{% csrf_token %}
+	<label>Date:</label>
+	<input type="date" name="date" value="{{d}}">
+	<select name="time">
+		<option value = "Morning" {{s.Morning}}>Morning</option>
+		<option value = "Evening" {{s.Evening}}>Evening</option>
+	</select>
+	<button type="submit" class="button" name="order">Go</button>
+</form>
+<table>
+	<tr>
+		<th>User ID</th>
+		<th>First name</th>
+		<th>Last name</th>
+		<th>Phone</th>
+		<th>Address</th>
+		<th>Code</th>
+		<th>Delivery Instrctions</th>
+	</tr>
+	{% for item in q %}
+	<tr>
+		{% for i in item%}
+		<td>{{i}}</td>
+		{%endfor%}
+	</tr>
+	{% endfor %}
+</table>
+{% endblock %}
