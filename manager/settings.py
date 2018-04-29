@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'import_export',
     'django_excel',
     'management.apps.ManagementConfig',
+    'website',
     'admin_views',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -63,6 +64,7 @@ TEMPLATES = [
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
             '/home/ubuntu/manager/management/templates',
+            '/home/ubuntu/manager/website/templates',
         ],
         'APP_DIRS': True,
         'OPTIONS': {

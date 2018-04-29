@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf.urls import url, include
 from django.conf import settings
 from django.conf.urls.static import static
 from management import views
@@ -25,6 +26,7 @@ urlpatterns = [
     path('admin/export',views.export,name='Exporting'),
 	path('admin/management/order_address',views.order_address,name='Address'),
     path('admin/', admin.site.urls),
+    url(r'^', include('website.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 admin.site.site_header = "Food Darzee Admin"
 admin.site.site_title = "Food Darzee Admin Portal"
