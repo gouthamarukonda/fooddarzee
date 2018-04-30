@@ -103,16 +103,28 @@ SESSION_ENGIN = 'django.contrib.sessions.backends.cache'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'fooddarzee',
-        'USER': 'postgres',
-        'PASSWORD': 'devaj@fd',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
+if os.environ.get('FD_HOST_TYPE', 'remote') == 'local':
+	DATABASES = {
+	    'default': {
+	        'ENGINE': 'django.db.backends.postgresql',
+	        'NAME': 'fooddarzee',
+	        'USER': 'postgres',
+	        'PASSWORD': 'devaj@fd',
+	        'HOST': '13.126.6.173',
+	        'PORT': '5432',
+	    }
+	}
+else:
+	DATABASES = {
+	    'default': {
+	        'ENGINE': 'django.db.backends.postgresql',
+	        'NAME': 'fooddarzee',
+	        'USER': 'postgres',
+	        'PASSWORD': 'devaj@fd',
+	        'HOST': '127.0.0.1',
+	        'PORT': '5432',
+	    }
+	}
 
 
 # Password validation
@@ -152,13 +164,13 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 
-STATIC_URL = '/static/'
+STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = 'media/'
 
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
