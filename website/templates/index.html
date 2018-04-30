@@ -1,4 +1,5 @@
-<!doctype html>
+{% load static %}
+{% static <!doctype html>
 <html class="" lang="en">
 
 <head>
@@ -8,14 +9,14 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory -->
-    <link href="images/newimages/favicon.png" type="images/x-icon" rel="shortcut icon">
+    <link href="{% static 'images/newimages/favicon.png' %}" type="images/x-icon" rel="shortcut icon">
     <!-- All css files are included here. -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/core.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/core.css' %}">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
     <!-- customizer style css -->
-    <link rel="stylesheet" href="css/style-customizer.css">
+    <link rel="stylesheet" href="{% static 'css/style-customizer.css' %}">
     <link href="index.html#" data-style="styles" rel="stylesheet">
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
