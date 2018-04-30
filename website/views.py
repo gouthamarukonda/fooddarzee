@@ -27,7 +27,7 @@ def get_daily_menu(request):
 		string = str(year)+"-"+str(month)+"-"+str(date)
 
 		qry = "select * from menu where date = %s"
-		resultset = pgExecQuery(qry, string)
+		resultset = pgExecQuery(qry, [string])
 
 		print(resultset)
 
