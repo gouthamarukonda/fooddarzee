@@ -18,7 +18,7 @@ def get_home_page(request):
 		return render(request, 'index.html')
 
 @csrf_exempt
-def get_daily_menu():
+def get_daily_menu(request):
 	if request.method == 'GET':
 		date = datetime.now().date().date
 		month = datetime.now().date().month
