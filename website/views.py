@@ -24,7 +24,7 @@ def get_daily_menu(request):
 		date = datetime.now().date().day
 		month = datetime.now().date().month
 		year = datetime.now().date().year
-		string = str(year)+'-'+str(month)+'-'+str(date)
+		string = str(year)+"-"+str(month)+"-"+str(date)
 
 		qry = "select * from menu where date = %s"
 		resultset = pgExecQuery(qry, string)
