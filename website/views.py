@@ -22,10 +22,10 @@ def get_home_page(request):
 		year = datetime.now().date().year
 		string = str(year)+"-"+str(month)+"-"+str(date)
 
-		qry = "select * from menu where date = %s and meal_time = %s"
-		resultset = pgExecQuery(qry, [string, "Breakfast"])
+		qry = "select dish.name from menu full outer join dish on dish.id = menu.dish_id where date = %s and meal_time = 'Breakfast' and menu.type = 'Vegetarian"
+		resultset = pgExecQuery(qry, [string])
 
-		dish_id = resultset[0].dish_id
+		bf_veg = resultset[0].name
 
 
-		return render(request, 'index.html', {'menu' : dish_id})
+		return render(request, 'index.html', {'bf_veg' : bf_veg})
