@@ -39,14 +39,14 @@
 			</div>
 		</div>
 	</div>
-  <!-- Body main wrapper start -->
+  	<!-- Body main wrapper start -->
     <div class="wrapper white-bg">
     	<!--Header section start-->
     	<div class="header sticky-header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-2 col-sm-3 col-xs-6">
-                    <div class="logo"><a href="index.html"><img src="{% static 'website/images/newimages/logo.png' %}" alt=""></a></div>
+                    <div class="logo" style="box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 7px 0px;border-radius: 50%;"><a href="index.html"><img src="{% static 'website/images/newimages/logo.png' %}" alt=""></a></div>
                 </div>
                 <div class="col-md-10 col-sm-9 col-xs-6">
                     <div class="mgea-full-width">
@@ -56,15 +56,12 @@
                                     <ul>
                                         <li><a href="#about">About Us</a></li>
                                         <li><a href="#working">How it works</a></li>
-                                        <li><a href="#gallery">Keto</a></li>
+		                    			<li><a href="#keto">Keto</a></li>
                                         <li><a href="#menu">On the menu</a></li>
+                                        <li><a href="#gallery">Gallery</a></li>
                                         <li><a href="#contact">contact</a></li>
                                         <li>
-                                        	<!-- <div class="middle-text">
-                                        		<div class="order-now">
-                                            		<a href="#">order now</a>
-                                        		</div>
-                                        	</div> -->
+                                        	<a href="order-now">Order Now</a>
                                     	</li>
                                     </ul>
                                 </div>
@@ -82,8 +79,9 @@
                         <ul>
                             <li><a href="#about">About Us</a></li>
 		                    <li><a href="#working">How it works</a></li>
-		                    <li><a href="#gallery">Keto</a></li>
+		                    <li><a href="#keto">Keto</a></li>
 		                    <li><a href="#menu">On the menu</a></li>
+		                    <li><a href="#gallery">Gallery</a></li>
 		                    <li><a href="#contact">contact</a></li>
 		                    <li><a href="order-now">Order Now</a></li>
                         </ul>
@@ -96,7 +94,7 @@
        <!--Header section end-->
        
               <!--slider section start-->
-        <div class="slider-content">
+        <div class="slider-content" id="mainpage">
             <div class="slider-text-table">
                 <div class="slider-text-tablecell text-center">
                     <div class="container">
@@ -111,11 +109,11 @@
                                             <h2>Keto Meals at your doorsteps</h2>
                                         </div>	
                                         <div class="title-2 cd-headline clip wow slideInDown" data-wow-duration="1.5s" data-wow-delay="0.5s">
-                                            <h1>loves
+                                            <h1>We deliver 
                                             <span class="cd-words-wrapper">
-                                                <b class="is-visible"> healthy</b>
+                                                <b class="is-visible">Healthy</b>
                                                 <b>Quality</b>
-                                                <b>Testy</b>
+                                                <b>Tasty</b>
                                             </span>
 									        food
 									        </h1>
@@ -138,7 +136,7 @@
         <!--slider section end-->
         
         <!--Home about section start-->
-        <div class="home-about white-bg ptb-100">
+        <div class="home-about white-bg ptb-100" id="about">
         	<div class="container">
         		<div class="row">
         			<div class="col-md-6 col-sm-6 col-xs-12">
@@ -161,1259 +159,53 @@
         	</div>
         </div>
         <!--Home about section end-->
-        <!--popular dises start-->
-        <div class="popular-dishes">
-            <div class="bg-img-2 ptb-100">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="section-title text-center grey_bg">
-                                <h2>On the Menu</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="row">
-                                <div class="dises-list">
-                                    <div class="dises-show text-center">
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="single-disesh">
-                                                <div class="disesh-img">
-                                                    <a href="index.html#"><img src="{% static 'website/images/dish/1.png' %}" alt=""></a>
-                                                </div>
-                                                <div class="disesh-desc pt-50">
-                                                    <h3><a href="index.html">Dish Name Here</a></h3>
-                                                    <p class="price">$100</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 col-sm-6 col-xs-12">
-                                            <div class="single-disesh">
-                                                <div class="disesh-img">
-                                                    <a href="index.html#"><img src="{% static 'website/images/dish/2.png' %}" alt=""></a>
-                                                </div>
-                                                <div class="disesh-desc pt-50">
-                                                    <h3><a href="index.html">Dish Name Here</a></h3>
-                                                    <p class="price">$100</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-4 hidden-sm col-xs-12">
-                                            <div class="single-disesh">
-                                                <div class="disesh-img">
-                                                    <a href="index.html#"><img src="{% static 'website/images/dish/3.png' %}" alt=""></a>
-                                                </div>
-                                                <div class="disesh-desc pt-50">
-                                                    <h3><a href="index.html">{{ bf_veg }}</a></h3>
-                                                    <p class="price">$100</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--popular dises end-->
-        
-        <!--Food menu section start-->
-        <div class="food-menu white-bg ptb-100">
-        	<div class="container">
-        		<div class="row">
-        			<div class="col-md-8 col-md-offset-2">
-        				<div class="section-title mb-50 text-center white_bg">
-        					<h2 class="mb-50">Our Food Menu</h2>
-        					<p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
-        				</div>
-        			</div>
-        		</div>
-        		<div class="row">
-        			<div class="food-item-tab home-page">
-        				<div class="col-md-12">
-        					<div class="foode-item-box fix mb-60">
-        						<ul class="nav" role="tablist">
-									<li role="presentation"><a href="index.html#tab1" aria-controls="tab1" data-toggle="tab">All item</a></li>
-									<li role="presentation"><a href="index.html#tab2" aria-controls="tab2" data-toggle="tab">breakfast</a></li>
-									<li role="presentation"><a href="index.html#tab3" aria-controls="tab3" data-toggle="tab">lunch</a></li>
-									<li role="presentation" class="active"><a aria-controls="tab4" href="index.html#tab4" data-toggle="tab">dinner</a></li>
-									<li role="presentation"><a href="index.html#tab5" aria-controls="tab5" data-toggle="tab">drink</a></li>
-									<li role="presentation"><a href="index.html#tab6" aria-controls="tab6" data-toggle="tab">party</a></li>
-									<li role="presentation"><a href="index.html#tab7" aria-controls="tab7" data-toggle="tab">coffee</a></li>
-								</ul>
-        					</div>
-        				</div>
-						<div class="food-item-desc">
-							<div class="col-md-12">
-								<div class="tab-content">
-									<div role="tabpanel" class="tab-pane" id="tab1">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="tab2">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="tab3">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane active" id="tab4">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="tab5">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="tab6">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div role="tabpanel" class="tab-pane" id="tab7">
-										<div class="row">
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_left">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/4.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/01.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/2.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/3.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="col-md-6 col-sm-6 col-xs-12">
-												<div class="fooder-menu-description float_right">
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/8.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/5.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item mb-30">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/7.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-													<div class="single-food-item">
-														<div class="single-food-inner">
-															<div class="food-img">
-																<img src="{% static 'website/images/food/6.png' %}" alt="">
-															</div>
-															<div class="single-food-item-desc">
-																<div class="single-food-item-title">
-																	<h2><a href="index.html#">Fried Potatoes With Garlic</a></h2>
-																	<p>Mushroom / Garlic / Veggies</p>
-																</div>
-																<div class="single-food-price">
-																	<p>$100</p>
-																</div>
-															</div>	
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-        			</div>
-        		</div>
-        	</div>
-        </div>
-        <!--Food menu section end-->
-        
-        <!--Our gallery start-->
-        <div class="our-gallery">
-            <div class="bg-img-2">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="section-title grey_bg mb-50 text-center">
-                                <h2 class="mb-50">our gallery</h2>
-                                <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="gallery-menu fix text-center mb-60">
-                                <ul>
-                                    <li class="active" data-filter="*">all</li>
-                                    <li data-filter=".desert">desert</li>
-                                    <li data-filter=".coffee">coffee</li>
-                                    <li data-filter=".drink">drink</li>
-                                    <li data-filter=".catering">catering services</li>
-                                </ul>
-                            </div>
-                            <div class="gallery-item-box row">
-                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item desert drink mb-30">
-                                    <div class="single-item-gallery">
-                                        <a href="{% static 'website/images/gallery/1.jpg' %}">
-                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
-                                        </a>
-                                        <img src="{% static 'website/images/gallery/1.jpg' %}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item coffee catering mb-30">
-                                    <div class="single-item-gallery">
-                                        <a href="{% static 'website/images/gallery/2.jpg' %}">
-                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
-                                        </a>
-                                        <img src="{% static 'website/images/gallery/2.jpg' %}" alt="">
-                                    </div>
-                                </div> 
-                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item desert drink mb-30">
-                                    <div class="single-item-gallery">
-                                        <a href="{% static 'website/images/gallery/3.jpg' %}">
-                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
-                                        </a>	
-                                        <img src="{% static 'website/images/gallery/3.jpg' %}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item coffee catering mb-30">
-                                    <div class="single-item-gallery">
-                                        <a href="{% static 'website/images/gallery/3.jpg' %}">
-                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
-                                        </a>
-                                        <img src="{% static 'website/images/gallery/4.jpg' %}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item coffee drink catering mb-30">
-                                    <div class="single-item-gallery">
-                                        <a href="{% static 'website/images/gallery/5.jpg' %}">
-                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
-                                        </a>
-                                        <img src="{% static 'website/images/gallery/5.jpg' %}" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item desert catering mb-30">
-                                    <div class="single-item-gallery">
-                                        <a href="{% static 'website/images/gallery/6.jpg' %}">
-                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
-                                        </a>
-                                        <img src="{% static 'website/images/gallery/6.jpg' %}" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>   
-                    </div>
-                </div>
-        	</div>
-        </div>
-        <!--Our gallery end-->
-       <!--reservation section start-->
-        <div id="temp" class="reservation ptb-100 white-bg">
-            <div class="bg-img-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="section-title white_bg mb-50 text-center">
-                                <h2 class="mb-50">Make A Reservation</h2>
-                                <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="reserv-section-inner">
-                                <div class="bg-img"></div>
-                                <div class="reserve-form">
-                                    <h3 class="reserv-title mb-60">Reservation Form</h3>
-                                    <form action="index.html#">
-                                        <div class="reserve-form-top">
-                                            <input type="text" placeholder="FUll name">
-                                            <input type="text" placeholder="Email address">
-                                            <input type="text" placeholder="Mobile number">
-                                            <div class="date-time">
-                                                <select>
-                                                    <option selected>Select Date And Time</option>
-                                                    <option>26Dec-10.00pm</option>
-                                                    <option>2Jan-10.00pm</option>
-                                                    <option>17Dec-10.00pm</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="reserve-submit mt-40">
-                                            <button type="submit">
-                                                submit
-                                            </button>
-                                        </div>
-                                    </form>	
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
-        <!--reservation section end-->
         <!--our blog start-->
-        <div class="our-blog grey-bg ptb-100">
+        <div class="our-blog grey-bg ptb-100" id="working">
         	<div class="container">
         		<div class="row">
         			<div class="col-md-8 col-md-offset-2">
 						<div class="section-title grey_bg mb-50 text-center">
-							<h2 class="mb-50">Our blog</h2>
-							<p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim nostrud exercitation ullamco laboris nisi.</p>
+							<h2 class="mb-50">How it works</h2>
+							
 						</div>
 					</div>
         		</div>
         		<div class="blog-details">
         			<div class="row">
-        				<div class="col-md-4 col-sm-6 col-xs-12">
+        				<div class="col-md-1 hidden-sm hidden-xs">
+        				</div>
+        				<div class="col-md-2 col-sm-3 col-xs-6">
         					<div class="single-blog">
         						<div class="blog-thumbnail">
-        							<img src="{% static 'website/images/blog/10.jpg' %}" alt="">
-        						</div>
-        						<div class="blog-desc">
-        						    <div class="publish-date">
-        								<p>13<span>Mar</span></p>
-        							</div>
-        							<div class="blog-title">
-        							    <h3><a href="index.html#">Lorem Ipsum is simply dummy</a></h3>
-        							</div>
+        							<img src="{% static 'website/images/1.png' %}" alt="">
         						</div>
         					</div>
         				</div>
-        				<div class="col-md-4 col-sm-6 col-xs-12">
-        					<div class="single-blog blog-video">
-        						<div class="blog-img">
-        							<div class="blog-thumbnail">
-        							    <img src="{% static 'website/images/blog/2.jpg' %}" alt="">
-        							</div>
-        							<div class="blog-hover">
-        							    <a href="https://www.youtube.com/watch?v=oxPgDogVFnQ"><i class="mdi mdi-play"></i></a>	
-        							</div>
-        						</div>
-        				    </div>
-        				</div>
-        				<div class="col-md-4 hidden-sm col-xs-12">
+        				<div class="col-md-2 col-sm-3 col-xs-6">
         					<div class="single-blog">
         						<div class="blog-thumbnail">
-        							<img src="{% static 'website/images/blog/3.jpg' %}" alt="">
+        							<img src="{% static 'website/images/2.png' %}" alt="">
         						</div>
-        						<div class="blog-desc">
-        						    <div class="publish-date">
-        								<p>13<span>Mar</span></p>
-        							</div>
-        							<div class="blog-title">
-        							    <h3><a href="index.html#">Lorem Ipsum is simply dummy</a></h3>
-        							</div>
+        					</div>
+        				</div>
+        				<div class="col-md-2 col-sm-3 col-xs-6">
+        					<div class="single-blog">
+        						<div class="blog-thumbnail">
+        							<img src="{% static 'website/images/3.png' %}" alt="">
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-md-2 col-sm-3 col-xs-6">
+        					<div class="single-blog">
+        						<div class="blog-thumbnail">
+        							<img src="{% static 'website/images/4.png' %}" alt="">
+        						</div>
+        					</div>
+        				</div>
+        				<div class="col-md-2 col-sm-3 col-xs-6">
+        					<div class="single-blog">
+        						<div class="blog-thumbnail">
+        							<img src="{% static 'website/images/5.png' %}" alt="">
         						</div>
         					</div>
         				</div>
@@ -1422,6 +214,183 @@
         	</div>
         </div>
         <!--our blog end-->
+
+        <!--Offer section start-->
+        <div class="offer-section fix" id="keto">
+            <div class="bg-img ptb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="offer-inner text-center">
+                                <h2 class="ttle1">
+                                    Transfrom in 30 
+                                </h2>
+                                <h2 class="ttle2">
+                                    THE KETOGENIC WAY
+                                </h2>
+                                <p> This program is the fastest and most scientific way of losing fat in a relatively short period of time. It spans over a period of 4 weeks with an estimated weight loss of up to 10 per cent of your body weight.</p>
+                                <p>The entire program is highly customised, and specific to each individual. It caters to the exact nutritional requirement of an individual to effectively burn fat.</p>
+                                <p>This program is an amalgamation of 3 entities: A ketogenic nutrition plan, delicious ketogenic food and a keto-friendly physical training regime. At the end of this program, a new wardrobe and a newer you is inevitable.</p>
+                                <div class="order-now">
+                                    <a href="keto">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Offer section end-->
+        <!--popular dises start-->
+        <div class="popular-dishes" id="menu">
+            <div class="bg-img-2 ptb-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="section-title text-center grey_bg" style="margin-bottom: 20px;">
+                                <h2>On the Menu</h2>
+                            </div>
+                            <div class="text-center">
+                                <a class="text-center button little button-black pt-20 cdate" style="border-radius: 50px;margin-bottom: 10px;"></a>
+                            </div>
+
+                            <div style="text-align: -webkit-center;">
+                            	<div class="mb-40" style="width: 200px;height: 40px;">
+                            		<a id="veg" class="text-center button little mb-40 pt-20" style="font-size: 18px;padding: 11px 0px;border-top-left-radius: 50px;border-bottom-left-radius: 50px;width: 50%;margin-right: -2%;">Veg</a>
+                                	<a id="non-veg" class="text-center button little mb-40 pt-20" style="font-size: 18px;padding: 11px 0px;border-top-right-radius: 50px;border-bottom-right-radius: 50px;width: 50%;margin-right: -2%;">Non-Veg</a>
+                            	</div>
+                                
+                            </div>
+                        </div>
+                        <div class="row veg-menu">
+	                        <div class="col-md-12">
+	                            <div class="row">
+	                                <div class="dises-list">
+	                                    <div class="dises-show text-center">
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price">Breakfast</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ bf_veg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ bf_veg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price">Lunch</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ lunch_veg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ lunch_veg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price">Snacks</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ snacks_veg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ snacks_veg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price">Dinner</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ dinner_veg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ dinner_veg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>	
+	                                </div>
+	                            </div>
+	                        </div>
+                    	</div>
+                    	<div class="row non-veg-menu">
+	                        <div class="col-md-12">
+	                            <div class="row">
+	                                <div class="dises-list">
+	                                    <div class="dises-show text-center">
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price" style="color: red;">Breakfast</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ bf_nveg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ bf_nveg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price" style="color: red;">Lunch</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ lunch_nveg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ lunch_nveg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price" style="color: red;">Snacks</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ snacks_nveg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ snacks_nveg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                        <div class="col-md-3 col-sm-6 col-xs-12">
+	                                            <div class="single-disesh">
+	                                            	<div class="disesh-desc">
+	                                                    <p class="price" style="color: red;">Dinner</p>
+	                                                </div>
+	                                                <div class="disesh-img">
+	                                                    <a href="index.html#"><img src="media/{{ dinner_nveg.photo }}" alt=""></a>
+	                                                </div>
+	                                                <div class="disesh-desc pt-50 disesh-desc-2">
+	                                                    <h3><a style="color:#535353;">{{ dinner_nveg.name }}</a></h3> 
+	                                                </div>
+	                                            </div>
+	                                        </div>
+	                                    </div>	
+	                                </div>
+	                            </div>
+	                        </div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--popular dises end-->
         <!--Tstimonial section start-->
         <div class="testimonial ptb-100">
             <div class="container">
@@ -1497,74 +466,115 @@
             </div>
         </div>
         <!--Tstimonial section end-->
-        <!--Team brand start-->
-        <div class="team-brand ptb-100 grey-bg">
-            <div class="container">
-                <div class="row">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12 col-xs-12 col-sm-12">
-                                <div class="team-list">
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-1.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-2.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-3.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-4.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-1.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-2.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-3.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-4.png' %}" alt=""></a>
-                                    </div>
-                                    <div class="single-team">
-                                        <a href="index.html#"><img src="{% static 'website/images/logo/team-3.png' %}" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Team brand end-->
-        <!--Offer section start-->
-        <div class="offer-section fix">
-            <div class="bg-img ptb-100">
+        <!--Our gallery start-->
+        <div class="our-gallery" id="gallery">
+            <div class="bg-img-2">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 col-md-offset-3">
-                            <div class="offer-inner text-center">
-                                <h2 class="ttle1">
-                                    50% Off 
-                                </h2>
-                                <h2 class="ttle2">
-                                    our Vegetable Soap
-                                </h2>
-                                <p>  Lorem ipsum  Newaz dolor sit amet, consectetur adipiscing elit. Donec aliquet dolor libero, eget loved dost venenatis maurisfinibus dictumss. Vestibulum quis elit eget neque porttitor  no amet dolor. Proin pretium purus a lorem  
-                           obortis pulvinar. Integer laoreet mi id eros porta euismod. Suspendisse potenti. Nulla eros  </p>
-                                <div class="order-now">
-                                    <a href="index.html#">order now</a>
-                                </div>
+                        <div class="col-md-8 col-md-offset-2">
+                            <div class="section-title grey_bg mb-50 text-center">
+                                <h2 class="mb-50">our gallery</h2>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="gallery-menu fix text-center mb-60">
+                                <ul>
+                                    <li class="active" data-filter="*">all</li>
+                                    <li data-filter=".Breakfast">Breakfast</li>
+                                    <li data-filter=".Lunch">Lunch</li>
+                                    <li data-filter=".Snacks">Snacks</li>
+                                    <li data-filter=".Dinner">Dinner services</li>
+                                </ul>
+                            </div>
+                            <div class="gallery-item-box row">
+                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item Breakfast Snacks mb-30">
+                                    <div class="single-item-gallery">
+                                        <a href="{% static 'website/images/gallery/1.jpg' %}">
+                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
+                                        </a>
+                                        <img src="{% static 'website/images/gallery/1.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item Lunch Dinner mb-30">
+                                    <div class="single-item-gallery">
+                                        <a href="{% static 'website/images/gallery/2.jpg' %}">
+                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
+                                        </a>
+                                        <img src="{% static 'website/images/gallery/2.jpg' %}" alt="">
+                                    </div>
+                                </div> 
+                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item Breakfast Snacks mb-30">
+                                    <div class="single-item-gallery">
+                                        <a href="{% static 'website/images/gallery/3.jpg' %}">
+                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
+                                        </a>	
+                                        <img src="{% static 'website/images/gallery/3.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item Lunch Dinner mb-30">
+                                    <div class="single-item-gallery">
+                                        <a href="{% static 'website/images/gallery/3.jpg' %}">
+                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
+                                        </a>
+                                        <img src="{% static 'website/images/gallery/4.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item Lunch Snacks Dinner mb-30">
+                                    <div class="single-item-gallery">
+                                        <a href="{% static 'website/images/gallery/5.jpg' %}">
+                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
+                                        </a>
+                                        <img src="{% static 'website/images/gallery/5.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 col-xs-12 gallery-item Breakfast Dinner mb-30">
+                                    <div class="single-item-gallery">
+                                        <a href="{% static 'website/images/gallery/6.jpg' %}">
+                                            <span class="plus"><i class="mdi mdi-plus"></i></span>
+                                        </a>
+                                        <img src="{% static 'website/images/gallery/6.jpg' %}" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+        	</div>
+        </div>
+        <!--Our gallery end-->
+   	    <!--Contact bottom section-->
+        <div class="contact-bottom-section ptb-100" id="contact">
+            <div class="bg-img"></div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 col-xs-12 contact-form-div">
+                        <div class="contact-form">
+                            <div class="contact-form-title">
+                                <h2>Get In Touch</h2>
+                            </div>
+                            <div class="contact-form-box">
+                                <p class="form-messege"></p>
+                                <form id="contact-form" action="mail.php" method="post">
+                                    <input name="name" type="text" placeholder="Name">
+                                    <input name="email" type="text" placeholder="Email">
+                                    <textarea name="message" placeholder="Message"></textarea>
+                                    <button type="submit">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12 map-div">
+                        <div id="contact-map" class="map-area">
+                            <div id="googleMap" style="width:100%;height:480px;"></div>
+                        </div>    
                     </div>
                 </div>
             </div>
         </div>
-        <!--Offer section end-->
+        <!--Contact bottom section end-->
+        
         <!--Footer section start-->
         <div class="footer">
             <div class="footer-top ptb-100 grey-bg">
@@ -1618,7 +628,7 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer newsletter">
-                                <h3 class="single-footer-title">Newsletter</h3>
+                                <h3 class="single-footer-title">Important Links</h3>
                                 <div class="single-footer-details mt-30">
                                     <p>Lorem ipsum dolor sit amet,  tore latthi dimu consectetueiusmodm dost </p>
                                     <div class="newsletter-form">
@@ -1637,7 +647,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12 col-sm-12 col-xs-12">
-                            <p>Copyright&copy; CHONDO 2016.All right reserved.Created by <a target="_blank" href="http://bootexperts.com">HasTech</a></p>
+                            <p>Copyright &copy; 2018 FoodDarzee. All rights reserved.</p>
                         </div>
                     </div>
                 </div>
@@ -1651,6 +661,11 @@
 
 
     <!-- Placed js at the end of the document so the pages load faster -->
+
+    <!-- Map js code here -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdWLY_Y6FL7QGW5vcO3zajUEsrKfQPNzI"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script src="{% static 'website/js/map.js' %}"></script>
 
     
     <!-- All js plugins included in this file. -->
@@ -1668,6 +683,58 @@
     <script src="{% static 'website/js/plugins.js' %}"></script>
     <script src="{% static 'website/js/main.js' %}"></script>
     <script src="{% static 'website/js/scroll.js' %}"></script>
+    <style type="text/css">
+    	#veg:hover{
+    		cursor: pointer;
+    		color: black;
+    	}
+    	#non-veg:hover{
+    		cursor: pointer;
+    		color: black;
+    	}
+    </style>
+    <script type="text/javascript">
+    	var newDate = new Date();
+
+        var dayArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        var monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        if (newDate.getDay() == 0) {
+            newDate.setDate(newDate.getDate() + 1);
+        }
+
+
+        var day = dayArray[newDate.getDay() - 1];
+
+
+
+        var month = monthArray[newDate.getMonth()];
+        var date = newDate.getDate();
+        var year = newDate.getFullYear();
+
+        var str = "<span style='font-weight: bold; font-size: 20px;'>" + day + ", " + month + " " + date + "<br/> " + year + "</span>";
+        $(".cdate").html(str);
+
+        $("#veg").click(function(){
+		    $(".veg-menu").show();
+		    $(".non-veg-menu").hide();
+		    $("#non-veg").css('background-color', 'red');
+		    $("#veg").css('background-color', '#228b22');		    
+		});
+
+		$("#non-veg").click(function(){
+		    $(".veg-menu").hide();
+		    $(".non-veg-menu").show();
+		});
+
+		$("document").ready(function() {
+		    setTimeout(function() {
+		        $("#veg").trigger('click');
+		    },1000);
+		});
+
+
+    </script>
 
 </body>
 
