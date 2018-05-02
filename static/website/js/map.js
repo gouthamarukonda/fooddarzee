@@ -7,7 +7,7 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById('googleMap'),
           mapOptions);
     var marker = new google.maps.Marker({
-        icon: 'images/icons/map-marker.png',
+        icon: 'static/website/images/icons/map-marker.png',
         position: map.getCenter(),
         map: map
     });

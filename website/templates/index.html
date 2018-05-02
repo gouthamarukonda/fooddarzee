@@ -20,12 +20,39 @@
     <link href="index.html#" data-style="styles" rel="stylesheet">
     <!-- Modernizr JS -->
     <script src="{% static 'website/js/vendor/modernizr-2.8.3.min.js' %}"></script>
+    <!-- Facebook Pixel Code -->
+	<script>
+	  !function(f,b,e,v,n,t,s)
+	  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+	  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+	  n.queue=[];t=b.createElement(e);t.async=!0;
+	  t.src=v;s=b.getElementsByTagName(e)[0];
+	  s.parentNode.insertBefore(t,s)}(window, document,'script',
+	  'https://connect.facebook.net/en_US/fbevents.js');
+	  fbq('init', '1930018360359408');
+	  fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+	  src="https://www.facebook.com/tr?id=1930018360359408&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
+
 </head>
 
 <body>
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->  
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.9&appId=550911118419470";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
     
     
     <!-- Pre Loader
@@ -598,16 +625,11 @@
                         </div>
                         <div class="col-md-3 col-sm-6 col-xs-12">
                             <div class="single-footer">
-                                <h3 class="single-footer-title">open hours</h3>
+                                <h3 class="single-footer-title">facebook</h3>
                                 <div class="single-footer-details mt-30">
-                                    <p>Lorem ipsum dolor sit amet,  tore latthi dimu consectetueiusmodm dost   </p>
-                                    <div class="open-list">
-                                        <ul>
-                                            <li>Monday- Friday. . . . . . . . . . . . . <span>8 AM - 5PM</span></li>
-                                            <li>Sunday. . . . . . . . . . . . . . . . . . . . . <span>12 AM - 5PM</span></li>
-                                            <li>Saturday . . . . . . . . . . . . . . . . . . . . . . . . . . . <span>Close</span></li>
-                                        </ul>
-                                    </div>
+                                    <div class="fb-page" data-href="https://www.facebook.com/FoodDarzee/" data-tabs="timeline" data-width="500" data-height="270" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+                                    <blockquote cite="https://www.facebook.com/FoodDarzee/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/FoodDarzee/">Food Darzee</a></blockquote>
+                                	</div>
                                 </div>
                             </div>
                         </div>
@@ -615,14 +637,9 @@
                             <div class="single-footer instagram">
                                 <h3 class="single-footer-title">instagram</h3>
                                 <div class="single-footer-details mt-30">
-                                   <ul>
-                                       <li><a href="index.html#"><img src="{% static 'website/images/instagram/1.jpg' %}" alt=""></a></li>
-                                       <li><a href="index.html#"><img src="{% static 'website/images/instagram/2.jpg' %}" alt=""></a></li>
-                                       <li><a href="index.html#"><img src="{% static 'website/images/instagram/3.jpg' %}" alt=""></a></li>
-                                       <li><a href="index.html#"><img src="{% static 'website/images/instagram/4.jpg' %}" alt=""></a></li>
-                                       <li><a href="index.html#"><img src="{% static 'website/images/instagram/5.jpg' %}" alt=""></a></li>
-                                       <li><a href="index.html#"><img src="{% static 'website/images/instagram/6.jpg' %}" alt=""></a></li>
-                                   </ul>
+                                   <script src="//lightwidget.com/widgets/lightwidget.js"></script>
+                                    <iframe src="//lightwidget.com/widgets/cff4b7ac063e5d24b3c45673dfdfbb21.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+
                                 </div>
                             </div>
                         </div>
